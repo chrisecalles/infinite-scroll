@@ -10,7 +10,7 @@ html {
 min-height 100vh means we want the view port to be stretched the whole height of the window */
 body {
 margin: 0;
-font-family: 'Bebas Neue', cursive;
+font-family: 'Bebas Neue', sans-serif;
 background: whitesmoke;
 }
 
@@ -30,7 +30,7 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.8);
+    /* background: rgba(255, 255, 255, 0.8); */
 }
 
 .loader img {
@@ -39,4 +39,25 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
 
+}
+
+/* Image Container */
+.image-container {
+    margin: 10px 30%
+}
+
+.image-container img {
+    margin-top: 5px;
+    width: 100%;
+}
+
+/* Media Query: Larger Smartphone */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px 
+    }
+
+    .image-container {
+        margin: 10px;
+    }
 }
